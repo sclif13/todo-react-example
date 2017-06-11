@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.todo {
+  width: 300px;
+  margin: auto;
+  background: aliceblue;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+.todo .textInput input[type="text"] {
+  width: 280px;
+  font-size: 20px;
+  margin-left: 7px;
+  flex: 1;
+  outline:none;
+}
+
+.todo .textInput {
+  display: flex;
+}
+
+ul.todoList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todoList li {
+  display: flex;
+}
+
+.todoList .itemText {
+  /*align-self: center;*/
+  padding-top: 5px;
+  min-width: 0;
+  word-wrap: break-word;
+}
+
+.todoList .itemCheck {
+  align-self: center;
+  margin-right: 5px;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.remove::after {
+  content: "×";
+}
+
+.remove {
+  margin-left: auto;
+  border: 0;
+  background: transparent;
+  color: red;
+}
